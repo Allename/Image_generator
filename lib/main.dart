@@ -4,10 +4,13 @@ void main() {
   var app =  MaterialApp(
     home: Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {}
+        child: const Icon(Icons.add),
+        onPressed: () {
+          print('Hi there!');
+        },
       ),
       appBar: AppBar(
-        title: Text('Lets see some images!'),
+        title: const Text('Lets see some images!'),
       ),
     ),
   );
