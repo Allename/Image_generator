@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+// import 'package:http/http.dart' show get;
 
 class App extends StatefulWidget {
-  createState() {
-    return AppState();
-  }
+  const App({Key? key}) : super(key: key);
+  @override
+  State<App> createState() => AppState();
 }
 
 
