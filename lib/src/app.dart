@@ -25,6 +25,7 @@ class AppState extends State<App>{
         appBar: AppBar(
           title: const Text('Lets see some images!'),
         ),
+        body: Text('$counter'),
       ),
     );
   }
