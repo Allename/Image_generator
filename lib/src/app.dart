@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:http/http.dart' show get;
+import 'package:http/http.dart' show get;
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
@@ -11,8 +11,9 @@ class App extends StatefulWidget {
 class AppState extends State<App>{
   int counter = 0;
 
-  void fetchImage() {
-
+  void fetchImage() async {
+    counter ++;
+    var response = await get(Uri.parse('https://jsonplaceholder.typicode.com/photos/$counter'));
   }
 
   @override
