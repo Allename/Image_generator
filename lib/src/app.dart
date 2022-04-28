@@ -6,12 +6,13 @@ import './widgets/image_list.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
+  
   @override
-  State<App> createState() => AppState();
+  State<App> createState() => _AppState();
 }
 
 
-class AppState extends State<App>{
+class _AppState extends State<App>{
   int counter = 0;
   List<ImageModel> images = [];
 
@@ -37,7 +38,7 @@ class AppState extends State<App>{
         appBar: AppBar(
           title: const Text('Lets see some images!'),
         ),
-        body: Text('$counter'),
+        body: ImageList(images),
       ),
     );
   }
