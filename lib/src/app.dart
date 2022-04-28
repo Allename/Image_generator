@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' show get;
 import '../src/models/image_model.dart';
 import 'dart:convert';
+import './widgets/image_list.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
