@@ -26,7 +26,10 @@ class ImageList extends StatelessWidget {
       ),
       child: Column(
         children: <Widget> [
-          Image.network(image.url),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8.0),
+            child: Image.network(image.url),
+          ),
           Text(image.title),
         ],
       ),
