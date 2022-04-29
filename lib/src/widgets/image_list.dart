@@ -24,7 +24,12 @@ class ImageList extends StatelessWidget {
       decoration: BoxDecoration(
         border: Border.all(color: Colors.grey),
       ),
-      child: Image.network(image.url),
+      child: Column(
+        children: <Widget> [
+          Image.network(image.url),
+          Text(image.title),
+        ],
+      ),
     );
   }
 }
